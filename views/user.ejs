@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Client Dashboard</title>
+</head>
+<body>
+    <div class="table-data">
+        <h2>Available Books</h2>
+            <table border="1">
+                <tr>
+                    <th>ISBN</th>
+                    <th>Name</th>
+                </tr>
+                
+                <% if(result.length){ 
+                    for(var i = 0;i < result.length;i++) { %>
+                <tr>
+                    <td><%=result[i].ISBN %></td>
+                    <td><%=result[i].NAME %></td>
+                </tr>
+                <% }) %>
+                <% } else{ %>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                <% } %>
+            </table>
+            </div>
+</body>
+</html>

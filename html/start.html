@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form Tutorial</title>
+		<style>
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+        .login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+    </style>
+	</head>
+	<body>
+		<div class="login-form">
+			<h1>Login Options</h1>
+			<form action="reg" method="POST">
+				<input type="submit" value="Register">
+            </form>
+            <form action="clogin" method="GET">
+				<input type="submit" value="Client Login">
+            </form>
+            <form action="alogin" method="POST">
+				<input type="submit" value="Admin Login">
+			</form>
+		</div>
+	</body>
+</html>
